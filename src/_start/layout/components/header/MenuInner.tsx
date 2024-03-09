@@ -42,6 +42,9 @@ export function MenuInner() {
             <li className="menu-item">
               <MenuItem to="/shop/product/1" title="Shop Product" free={true} />
             </li>
+            <li className="menu-item">
+              <MenuItem to="/home-pages" title="My Page" /> 
+            </li>
           </ul>
         </div>
         <div className="col-sm-4">

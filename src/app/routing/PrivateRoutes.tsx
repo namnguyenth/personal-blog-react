@@ -4,6 +4,7 @@ import { FallbackView } from "../../_start/partials";
 import { LightDashboardWrapper } from "../pages/dashboards/light-dashboard/LightDashboardWrapper";
 import { StartDashboardWrapper } from "../pages/dashboards/start-dashboard/StartDashboardWrapper";
 import { MenuTestPage } from "../pages/MenuTestPage";
+import { HomePages } from "../pages/homepage/homepages";
 
 export function PrivateRoutes() {
   const ProfilePageWrapper = lazy(
@@ -23,6 +24,7 @@ export function PrivateRoutes() {
         <Route path="/profile" component={ProfilePageWrapper} />
         <Route path="/menu-test" component={MenuTestPage} />
         <Route path="/docs" component={DocsPageWrapper} />
+        <Route path="/home-pages" component={HomePages} />
         <Redirect from="/auth" to="/dashboard" />
         <Redirect exact from="/" to="/dashboard" />
         <Redirect to="dashboard" />
