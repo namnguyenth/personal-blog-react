@@ -19,6 +19,19 @@ const TablesList: React.FC<Props> = ({ className, innerPadding = "" }) => {
           </span>
           <span className="text-muted mt-2 fw-bold fs-6">890,344 Sales</span>
         </h3>
+        <div
+          className="card-toolbar mr-auto input-group input-group-solid w-250px "
+        >
+          <span className="input-group-text" id="basic-addon1">
+            <KTSVG
+              className="svg-icon-1 svg-icon-dark"
+              path="/media/icons/duotone/General/Search.svg"
+            />
+          </span>
+          <input type="text" className="form-control ps-0 py-4 h-auto" placeholder="Search"
+          />
+        </div>
+        {/* <input type="text" className="card-toolbar mr-auto form-control form-control-solid w-250px" placeholder="Search..."></input> */}
         <div className="card-toolbar">
           <ul className="nav nav-pills nav-pills-sm nav-light">
             <li className="nav-item">
